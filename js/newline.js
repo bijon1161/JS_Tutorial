@@ -22,3 +22,5 @@ for (i=0;i<10;i++)
     document.write(i);
     document.write('<br>');
 }
+
+// you can name a loop like this outer:for();   here the loop is named outer, you can break this loop from its nested loop like calling "break outer;"
