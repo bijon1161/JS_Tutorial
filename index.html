@@ -8,7 +8,15 @@
     
 </head>
 <body>
-    <h1 id="h">JS Tutorial</h1>
-    <script  src="js/strictmode.js"></script>
+    <ul>
+        <li>list 1</li>
+        <li id="first">list 2</li>
+        <li>list 3</li>
+    </ul>
 </body>
+<script>
+    let elm=document.getElementById("first");
+    elm.innerHTML="<p> hello </p>";
+</script>
+
 </html>
