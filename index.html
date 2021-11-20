@@ -9,14 +9,18 @@
 </head>
 <body>
     <ul>
-        <li>list 1</li>
+        <li class="pi">list 1</li>
         <li id="first">list 2</li>
-        <li>list 3</li>
+        <li class="pi">list 3</li>
     </ul>
 </body>
 <script>
-    let elm=document.getElementById("first");
-    elm.innerHTML="<p> hello </p>";
+    let elm=document.getElementsByClassName("pi");
+    for(let i=0; i<elm.length; i++)
+    {
+        elm[i].innerHTML="<p> hello </p>";
+    }
+    
 </script>
 
 </html>
