@@ -13,12 +13,22 @@
         <li id="first">list 2</li>
         <li class="pi">list 3</li>
     </ul>
+    <h2>Heading 1</h2>
+    <div id="div1">
+        <p>Paragraph 1</p>
+        <h2>Heading 2</h2>
+        <p>Paragraph 2</p>
+        <h2>Heading 3</h2>
+        <p>Paragraph 3</p>
+    </div>
+    
 </body>
 <script>
-    let elm=document.getElementsByClassName("pi");
+    let div1=document.getElementById("div1");
+    let elm=div1.getElementsByTagName("h2");
     for(let i=0; i<elm.length; i++)
     {
-        elm[i].innerHTML="<p> hello </p>";
+        elm[i].innerHTML=" hello ";
     }
     
 </script>
