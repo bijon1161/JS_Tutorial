@@ -20,7 +20,8 @@
     let elm = document.getElementById("first");
     let list= document.createElement("li");
     list.textContent="new list 4";
-    elm.appendChild(list);
+    let pos= elm.firstElementChild.nextElementSibling;
+    elm.insertBefore(list,pos);
     
     
 
