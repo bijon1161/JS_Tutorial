@@ -19,8 +19,9 @@
 <script>
     
     let elm = document.getElementById("first");
-    let ch= elm.firstElementChild.nextElementSibling;
-    elm.removeChild(ch);
+    let ch= elm.cloneNode(true);
+    ch.id="second";
+    document.body.appendChild(ch);
     
     
 
