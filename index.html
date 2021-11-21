@@ -11,40 +11,18 @@
 
 <body>
     <ul id="first">
-        <li class="pi">list 1</li>
+        <li>list 1</li>
         <li>list 2</li>
-        <li class="pi">list 3</li>
+        <li>list 3</li>
     </ul>
-    <ul>
-        <li class="pi">list a</li>
-        <li id="first1">list b</li>
-        <li class="pi">list c</li>
-        <li class="pi">list d</li>
-        <li>list e</li>
-        <li class="pi">list f</li>
-    </ul>
- 
 </body>
 <script>
-    let elm = document.getElementById("first1");
-    let prt = elm.parentElement;
-    let sib1= elm.previousElementSibling;
-    let sib2= elm.nextElementSibling;
-    let sib3= elm.nextElementSibling.nextElementSibling;
-
-    console.log(prt);
-    console.log(elm);
-    console.log(sib1);
-    console.log(sib2);
-    console.log(sib3);
-    let elm2 = document.getElementById("first");
-    let ch = elm2.firstElementChild;
-    let ch2 = elm2.lastElementChild;
-    let ch3 = elm2.children;
-    console.log(elm2);
-    console.log(ch);
-    console.log(ch2);
-    console.log(ch3);
+    let elm = document.getElementById("first");
+    let list= document.createElement("li");
+    list.textContent="new list 4";
+    elm.appendChild(list);
+    
+    
 
 </script>
 
