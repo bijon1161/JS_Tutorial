@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <ul>
+    <ul id="first">
         <li class="pi">list 1</li>
-        <li id="first">list 2</li>
+        <li>list 2</li>
         <li class="pi">list 3</li>
     </ul>
     <ul>
@@ -27,6 +27,14 @@
     let prt = elm.parentElement;
     console.log(prt);
     console.log(elm);
+    let elm2 = document.getElementById("first");
+    let ch = elm2.firstElementChild;
+    let ch2 = elm2.lastElementChild;
+    let ch3 = elm2.children;
+    console.log(elm2);
+    console.log(ch);
+    console.log(ch2);
+    console.log(ch3);
 
 </script>
 
