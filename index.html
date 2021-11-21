@@ -15,21 +15,18 @@
         <li id="first">list 2</li>
         <li class="pi">list 3</li>
     </ul>
-    <h2 class="intro">Heading 1</h2>
-    <p class="intro">Paragraph 1</p>
-    <h2>Heading 2</h2>
-    <p>Paragraph 2</p>
-    <h2>Heading 3</h2>
-    <p class="intro">Paragraph 3</p>
-
-
+    <ul>
+        <li class="pi">list a</li>
+        <li id="first1">list b</li>
+        <li class="pi">list c</li>
+    </ul>
+ 
 </body>
 <script>
-    let elm = document.querySelectorAll("p.intro");
-    for (let i = 0; i < elm.length; i++) {
-        elm[i].innerHTML = " hello ";
-    }
-    
+    let elm = document.getElementById("first1");
+    let prt = elm.parentElement;
+    console.log(prt);
+    console.log(elm);
 
 </script>
 
