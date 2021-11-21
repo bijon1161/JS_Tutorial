@@ -17,11 +17,10 @@
     </ul>
 </body>
 <script>
-    let parent = document.body;
-    let list= document.createElement("h2");
-    list.textContent="Hello";
+    
     let elm = document.getElementById("first");
-    parent.insertBefore(list,elm);
+    let ch= elm.firstElementChild.nextElementSibling;
+    elm.removeChild(ch);
     
     
 
