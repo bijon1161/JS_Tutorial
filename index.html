@@ -19,9 +19,10 @@
 <script>
     
     let elm = document.getElementById("first");
-    let ch= elm.cloneNode(true);
-    ch.id="second";
-    document.body.appendChild(ch);
+    let item= document.createElement("h2");
+    item.textContent = "Hello";
+    let replace= elm.firstElementChild.nextElementSibling;
+    elm.replaceChild(item,replace);
     
     
 
