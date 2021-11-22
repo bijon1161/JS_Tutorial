@@ -10,19 +10,20 @@
 </head>
 
 <body>
-    <ul id="first">
-        <li>list 1</li>
-        <li>list 2</li>
-        <li>list 3</li>
-    </ul>
+    <!--beforebegin-->
+    <div id="intro">
+        <!--afterbegin-->
+        <h2>Hello</h2>
+        <p>This is p tag</p>
+        <!--beforeend-->
+    </div>
+    <!--afterend-->
 </body>
 <script>
     
-    let elm = document.getElementById("first");
-    let item= document.createElement("h2");
-    item.textContent = "Hello";
-    let replace= elm.firstElementChild.nextElementSibling;
-    elm.replaceChild(item,replace);
+    let elm = document.getElementById("intro");
+    let html="<h1> new h1 </h1>";
+    elm.insertAdjacentHTML("beforeend",html);
     
     
 
