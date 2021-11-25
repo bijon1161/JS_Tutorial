@@ -10,22 +10,16 @@
 </head>
 
 <body>
-    <!--beforebegin-->
-    <div id="intro">
-        <!--afterbegin-->
-        <h2>Hello</h2>
-        <p>This is p tag</p>
-        <!--beforeend-->
-    </div>
-    <!--afterend-->
+    <button id="test" class="name">Send</button>
 </body>
 <script>
     
-    let elm = document.getElementById("intro");
-    let html="<h1> new h1 </h1>";
-    elm.insertAdjacentHTML("afterbegin",html);
-    
-    
+    let btn = document.getElementById("test");
+    btn.setAttribute("value","bijon");
+    let val = btn.getAttribute("class");
+    console.log(val);
+    btn.removeAttribute("class");
+    btn.hasAttribute("id");
 
 </script>
 
