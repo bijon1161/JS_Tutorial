@@ -25,29 +25,14 @@
     </div>
 </body>
 <script>
-    //to see whole list
+    //with border and margin
     let box=document.getElementById("box");
-    console.log(box.classList);
-    for(let css of box.classList)
-    {
-        console.log(css);
-    }
+    let width= box.offsetWidth;
+    let height= box.offsetHeight;
 
-    //to add
-    box.classList.add("dim");
-
-    //to remove
-    box.classList.remove("dim");
-
-    //to replace
-    box.classList.replace("color","dim");
-
-    //to check
-    let res=box.classList.contains("dim");
-    console.log(res);
-
-    //to toggle
-    box.classList.toggle("dim"); //if dim is in class it will be deleted, if it is not there then it will be added
+    //without border,only with margin
+    let width= box.clientWidth;
+    let height= box.clientHeight;
 
 </script>
 
