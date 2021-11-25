@@ -7,26 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #btn{
+        .color{
             background-color:red;
             color:white;
+        }
+        .dim{
+            border:1px solid black;
+            padding: 100px;
         }
     </style>
 
 </head>
 
 <body>
-    <button id="test" class="name">Send</button>
+    <div id="box" class="color dim">
+        <p>This is dummy text</p>
+    </div>
 </body>
 <script>
-    
-    let btn = document.getElementById("test");
-    //one way: btn.setAttribute("value","bijon");
-    let css= getComputedStyle(btn);
-    console.log(css);
-    console.log(css.color);
-    console.log(css.background);
-    //to add with previous defined style, use += (btn.style.cssText+="";)
+    //to see whole list
+    let box=document.getElementById("box");
+    console.log(box.classList);
+    for(let css of box.classList)
+    {
+        console.log(css);
+    }
 
 </script>
 
