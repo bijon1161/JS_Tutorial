@@ -15,11 +15,9 @@
 <script>
     
     let btn = document.getElementById("test");
-    btn.setAttribute("value","bijon");
-    let val = btn.getAttribute("class");
-    console.log(val);
-    btn.removeAttribute("class");
-    btn.hasAttribute("id");
+    //one way: btn.setAttribute("value","bijon");
+    btn.style.cssText="background-color:red; color:white;";
+    //to add with previous defined style, use += (btn.style.cssText+="";)
 
 </script>
 
