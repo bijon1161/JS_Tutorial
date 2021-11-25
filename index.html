@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <div id="box" class="color dim">
+    <div id="box" class="color">
         <p>This is dummy text</p>
     </div>
 </body>
@@ -32,6 +32,22 @@
     {
         console.log(css);
     }
+
+    //to add
+    box.classList.add("dim");
+
+    //to remove
+    box.classList.remove("dim");
+
+    //to replace
+    box.classList.replace("color","dim");
+
+    //to check
+    let res=box.classList.contains("dim");
+    console.log(res);
+
+    //to toggle
+    box.classList.toggle("dim"); //if dim is in class it will be deleted, if it is not there then it will be added
 
 </script>
 
