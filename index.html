@@ -11,24 +11,19 @@
 </head>
 
 <body>
-    <button id="btn">Click Me!</button>
+    <img src="\E:\JS Tutorial\DemoImage.jpg" alt="">
 </body>
 <script>
     
-    let btn = document.getElementById("btn");
-    function click1()
+    window.addEventListener('DOMContentLoaded',function()
     {
-        console.log("click1 activated");
-    };
-    function click2()
+        console.log("DOM Tree Createrd!");
+    });
+
+    window.addEventListener('load',function()
     {
-        console.log("click2 activated");
-    };
-
-    btn.addEventListener('click',click1);
-    btn.addEventListener('click',click2);
-
-    btn.removeEventListener('click', click2);
+        console.log("Fully Loaded");
+    });
     
 
 </script>
