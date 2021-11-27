@@ -16,21 +16,20 @@
 <script>
     
     let btn = document.getElementById("btn");
-
-    btn.addEventListener('click',function()
+    function click1()
     {
-        console.log("Button was clicked!");
-    });
-
-    btn.addEventListener('mouseover',function()
+        console.log("click1 activated");
+    };
+    function click2()
     {
-        console.log("Mouse Over is activated");
-    });
+        console.log("click2 activated");
+    };
 
-    btn.addEventListener('mouseout',function()
-    {
-        console.log("Mouse Out is activated");
-    });
+    btn.addEventListener('click',click1);
+    btn.addEventListener('click',click2);
+
+    btn.removeEventListener('click', click2);
+    
 
 </script>
 
