@@ -6,33 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .color{
-            background-color:red;
-            color:white;
-        }
-        .dim{
-            border:1px solid black;
-            padding: 100px;
-        }
-    </style>
+    
 
 </head>
 
 <body>
-    <div id="box" class="color">
-        <p>This is dummy text</p>
-    </div>
+    <button id="btn" onClick="btnClick()">Click Me!</button>
 </body>
 <script>
-    //with border and margin
-    let box=document.getElementById("box");
-    let width= box.offsetWidth;
-    let height= box.offsetHeight;
-
-    //without border,only with margin
-    let width= box.clientWidth;
-    let height= box.clientHeight;
+    function btnClick()
+    {
+        alert("Btn was clicked!");
+    }
 
 </script>
 
