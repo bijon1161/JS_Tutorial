@@ -6,24 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #box{
+            height:100px;
+            width:100px;
+            background-color: blueviolet;
+        }
+    </style>
     
 
 </head>
 
 <body>
-    <img src="\E:\JS Tutorial\DemoImage.jpg" alt="">
+    <div id="box" oncontextmenu="fun()"></div>
 </body>
 <script>
     
-    window.addEventListener('DOMContentLoaded',function()
+    function fun()
     {
-        console.log("DOM Tree Createrd!");
-    });
-
-    window.addEventListener('load',function()
-    {
-        console.log("Fully Loaded");
-    });
+        alert("Right Clicked");
+    }
+    //some mouse events
+    /*
+    onclick
+    ondblclick
+    onmousedown
+    onmouseup
+    ommouseover
+    onmouseout
+    */
     
 
 </script>
