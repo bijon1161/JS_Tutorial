@@ -18,23 +18,16 @@
 </head>
 
 <body>
-    <div id="box" oncontextmenu="fun()"></div>
+    <div id="box"></div>
 </body>
 <script>
     
-    function fun()
+    window.addEventListener('keydown',checkkey );
+    function checkkey(e)
     {
-        alert("Right Clicked");
+        console.log(e.key);
     }
-    //some mouse events
-    /*
-    onclick
-    ondblclick
-    onmousedown
-    onmouseup
-    ommouseover
-    onmouseout
-    */
+    
     
 
 </script>
