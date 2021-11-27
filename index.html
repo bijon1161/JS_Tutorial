@@ -11,13 +11,26 @@
 </head>
 
 <body>
-    <button id="btn" onClick="btnClick()">Click Me!</button>
+    <button id="btn">Click Me!</button>
 </body>
 <script>
-    function btnClick()
+    
+    let btn = document.getElementById("btn");
+
+    btn.addEventListener('click',function()
     {
-        alert("Btn was clicked!");
-    }
+        console.log("Button was clicked!");
+    });
+
+    btn.addEventListener('mouseover',function()
+    {
+        console.log("Mouse Over is activated");
+    });
+
+    btn.addEventListener('mouseout',function()
+    {
+        console.log("Mouse Out is activated");
+    });
 
 </script>
 
