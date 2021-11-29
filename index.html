@@ -23,18 +23,12 @@
 <script>
 
     let x = document.getElementById("in");
-    x.addEventListener("focus",myFocus);
-    x.addEventListener("blur",myBlur);
+    
+    x.addEventListener('change',function(){
+        console.log(this.value);
+    })
 
-    function myFocus()
-    {
-        x.style.background="blueviolet";
-    }
-    function myBlur()
-    {
-        x.style.background="Yellow";
-    }
-
+   
 
 
 </script>
