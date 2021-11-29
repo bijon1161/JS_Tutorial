@@ -11,12 +11,9 @@
             padding : 20px;
             background-color:cornflowerblue;
         }
-        #myDiv {
-            padding : 20px;
-            background-color:crimson;
-        }
+        
         #btn{
-            padding : 20px;
+            
             background-color:darkolivegreen;
         }
     </style>
@@ -25,26 +22,15 @@
 </head>
 
 <body>
-    <div id="myDiv">
-        <button id="btn">Fuck Me!</button>
-    </div>
+    <a href="https://www.google.com" id="btn">Click Me!</a>
 </body>
 <script>
 
-    let d = document.getElementById("myDiv");
-    let b = document.getElementById("btn");
-    b.addEventListener("click",btnClicked,true);
-    d.addEventListener("click",divClicked,true);
-    document.body.addEventListener("click",bodyClicked,true);
-    function btnClicked(){
-        console.log("Button Clicked...");
-    }
-    function divClicked(){
-        console.log("Div Clicked...");
-    }
-    function bodyClicked(){
-        console.log("Body Clicked...");
-    }
+    let link = document.getElementById("btn");
+    link.addEventListener("click",function(e)
+    {
+        e.preventDefault();
+    });
    
 
 
