@@ -8,7 +8,16 @@
     <title>Document</title>
     <style>
         body {
-            height: 2000px;
+            padding : 20px;
+            background-color:cornflowerblue;
+        }
+        #myDiv {
+            padding : 20px;
+            background-color:crimson;
+        }
+        #btn{
+            padding : 20px;
+            background-color:darkolivegreen;
         }
     </style>
 
@@ -16,18 +25,26 @@
 </head>
 
 <body>
-    <form action="">
-        <input type="text" id="in">
-    </form>
+    <div id="myDiv">
+        <button id="btn">Fuck Me!</button>
+    </div>
 </body>
 <script>
 
-    let x = document.getElementById("in");
-    
-    x.addEventListener('input',function(){
-        console.log(this.value);
-    })
-
+    let d = document.getElementById("myDiv");
+    let b = document.getElementById("btn");
+    b.addEventListener("click",btnClicked);
+    d.addEventListener("click",divClicked);
+    document.body.addEventListener("click",bodyClicked);
+    function btnClicked(){
+        console.log("Button Clicked...");
+    }
+    function divClicked(){
+        console.log("Div Clicked...");
+    }
+    function bodyClicked(){
+        console.log("Body Clicked...");
+    }
    
 
 
