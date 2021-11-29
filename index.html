@@ -7,10 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #box{
-            height:100px;
-            width:100px;
-            background-color: blueviolet;
+        body{
+            height: 2000px;
         }
     </style>
     
@@ -18,14 +16,14 @@
 </head>
 
 <body>
-    <div id="box"></div>
+    <h1>Hello!</h1>
 </body>
 <script>
     
-    window.addEventListener('keydown',checkkey );
-    function checkkey(e)
+    window.addEventListener('scroll',checkscroll );
+    function checkscroll()
     {
-        console.log(e.key);
+        console.log("Scrolling...");
     }
     
     
