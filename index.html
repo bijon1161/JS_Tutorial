@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
+        body {
             height: 2000px;
         }
     </style>
-    
+
 
 </head>
 
@@ -19,24 +19,20 @@
     <h1>Hello!</h1>
 </body>
 <script>
+
+    window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 150) {
+            document.body.style.background = "red";
+        }
+
+        else {
+            document.body.style.background = "white";
+        }
+
+    });
     
-    window.addEventListener('wheel', function (e)
-    {
-        if(event.deltaY<0){
-        console.log("Scrolling Up...");
-        }
-        else if(event.deltaY>0)
-        {
-            console.log("Scrolling Down...");
-        }
-        else{        
-            console.log("Sleeping...");
-        }
-        
-    }
-     );
-   
-    
+
+
 
 </script>
 
