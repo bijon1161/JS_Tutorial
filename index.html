@@ -16,21 +16,24 @@
 </head>
 
 <body>
-    <h1>Hello!</h1>
+    <form action="">
+        <input type="text" id="in">
+    </form>
 </body>
 <script>
 
-    window.addEventListener('scroll', function () {
-        if (window.pageYOffset > 150) {
-            document.body.style.background = "red";
-        }
+    let x = document.getElementById("in");
+    x.addEventListener("focus",myFocus);
+    x.addEventListener("blur",myBlur);
 
-        else {
-            document.body.style.background = "white";
-        }
-
-    });
-    
+    function myFocus()
+    {
+        x.style.background="blueviolet";
+    }
+    function myBlur()
+    {
+        x.style.background="Yellow";
+    }
 
 
 
