@@ -8,13 +8,8 @@
     <title>Document</title>
     <style>
         body {
-            padding : 20px;
-            background-color:cornflowerblue;
-        }
-        
-        #btn{
-            
-            background-color:darkolivegreen;
+            padding: 20px;
+            background-color: cornflowerblue;
         }
     </style>
 
@@ -22,17 +17,25 @@
 </head>
 
 <body>
-    <a href="https://www.google.com" id="btn">Click Me!</a>
+    <button id="btn1">Google</button>
+    <button id="btn2">Yahoo</button>
+    <button id="btn3">Close</button>
 </body>
 <script>
-
-    let link = document.getElementById("btn");
-    link.addEventListener("click",function(e)
-    {
-        e.preventDefault();
+    let btn1=document.getElementById("btn1");
+    let btn2=document.getElementById("btn2");
+    let btn3=document.getElementById("btn3");
+    let win;
+    let features= "width=500,height=500";
+    btn1.addEventListener('click', function(){
+        win=window.open("https://www.google.com","name",features);
     });
-   
-
+    btn2.addEventListener('click', function(){
+        window.open("https://www.yahoo.com","name",features); //name same ,so will open in one window
+    });
+    btn3.addEventListener('click', function(){
+        win.close();
+    });
 
 </script>
 
