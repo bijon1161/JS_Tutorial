@@ -17,16 +17,18 @@
 </head>
 
 <body>
-    <button id="btn1">Reload</button>
+    <button id="btn1">Navigator Object</button>
     
 <script>
    
-   let bt= document.getElementById("btn1");
-   bt.addEventListener("click",function()
-   {
-        location.reload();
+   console.log(navigator.appName);
+   console.log(navigator.appCodeName);
+   console.log(navigator.appVersion);
+   console.log(navigator.cookieEnabled);
+   console.log(navigator.userAgent);
+   console.log(navigator.platform);
+   console.log(navigator.javaEnabled());
 
-   });
     
 </script>
 
