@@ -17,18 +17,15 @@
 </head>
 
 <body>
-    <button id="btn1">Clear Interval</button>
+    <button id="btn1">Redirect to Google</button>
     
 <script>
-   var t1 = setInterval(fun,2000);
-   function fun()
-   {
-       console.log("Subscribe");
-   }
+   
    let bt= document.getElementById("btn1");
    bt.addEventListener("click",function()
    {
-        clearInterval(t1);
+        location.href="https://www.google.com";
+
    });
     
 </script>
