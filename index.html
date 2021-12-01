@@ -17,22 +17,19 @@
 </head>
 
 <body>
-    <button id="btn1">Google</button>
-    <button id="btn2">Yahoo</button>
-    <button id="btn3">Close</button>
-</body>
-<script>
-    let timeoutId = setTimeout(myFunc,5000);
-    function myFunc()
-    {
-        alert("Subscribe");
-    }
+    <button id="btn1">Clear Interval</button>
     
-    let user = prompt("Are you a user? If yes, type Yes");
-    if(user == "yes" || user == "Yes")
-    {
-        clearTimeout(timeoutId);
-    }
+<script>
+   var t1 = setInterval(fun,2000);
+   function fun()
+   {
+       console.log("Subscribe");
+   }
+   let bt= document.getElementById("btn1");
+   bt.addEventListener("click",function()
+   {
+        clearInterval(t1);
+   });
     
 </script>
 
